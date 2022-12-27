@@ -10,27 +10,21 @@
         <!-- Assets -->
         <a-assets>
 <!--            <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>-->
+            <a-asset-item id="sc" src="models/sc_embed.glb"></a-asset-item>
         </a-assets>
         
         <!-- Environment -->
-        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+<!--        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>-->
         
         <!-- Entities -->
+<!--
         <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
         <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-        
-        <a-entity
-                  text="value: Studio\nPanko"
-                  position="0 1 0"
-                  scale="5 5 5">
-        </a-entity>
-        
-        <a-entity
-            geometry="primitive: plane; width: 4; height: auto"
-                  align="right"
-                  position="0 1 0"
-                  scale="5 5 5"
-            text="value: Studio Panko">
+-->
+        <a-entity light="type: ambient; color: #CCC"></a-entity>
+        <a-entity light="type: directional; color: #EEE; castShadow: true; intensity: 0.5" position="4 1 0"></a-entity>
+        <a-entity position="0 0 0">
+            <a-gltf-model src="#sc" rotation="0 0 0" scale="100 100 100"></a-gltf-model>
         </a-entity>
       </a-scene>
     </body>
